@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import { ModalsModule } from './modals/modals.module';
 import { LoginEmailComponent } from './login-email/login-email.component';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginEmailComponent
+    LoginEmailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
