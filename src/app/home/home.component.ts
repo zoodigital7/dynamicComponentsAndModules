@@ -29,11 +29,14 @@ export class HomeComponent implements OnInit {
   }
 
   setUserLoggedIn(event: any) {
-    debugger
     if (event) {
       this.modalService.close(this.ngIfModalId)
       this.currentUser = this.userService.currentUserValue
     }
+  }
+
+  logoutUser() {
+    this.userService.removeCurrentUser()
   }
 
 }
